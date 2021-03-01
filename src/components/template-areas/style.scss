@@ -1,0 +1,46 @@
+.ex-area {
+  display: grid;
+
+  grid-template-areas:
+            "header    header    header    header"
+            "row3      row3      row3      ......"
+            "col2row2  col2row2  ........  col2"
+            "col2row2  col2row2  col1row1  col2";
+
+
+  grid-template-columns: repeat(4, minmax(auto, 1fr));
+  grid-template-rows: repeat(4, minmax(50px, auto));
+  grid-gap: 5px;
+
+  .item {
+    padding: 20px;
+  }
+
+  .col2row2 {
+    grid-area: col2row2;
+  }
+
+  .row3 {
+    grid-area: row3;
+  }
+
+  .col1row1 {
+    grid-area: col1row1;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .col2 {
+    grid-area: col2;
+  }
+
+  .pos {
+    grid-area: header-end / row3-end / col2-start
+  }
+}
+
+.opacity0 {
+  opacity: 0;
+}

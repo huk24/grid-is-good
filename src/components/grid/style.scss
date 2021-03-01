@@ -1,0 +1,12 @@
+.grid-default {
+  display: grid;
+  place-self: center;
+}
+
+.row-example {
+  place-self: center;
+}
+
+.page {
+  place-content: stretch;
+}

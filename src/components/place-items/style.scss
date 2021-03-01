@@ -1,0 +1,13 @@
+.place-exempls {
+  display: grid;
+  grid: auto-flow 100px / 1fr 1fr;
+  width: 100%;
+  gap: 10px;
+  font-size: 24px;
+
+
+  .item {
+    padding: 5px 20px;
+  }
+
+}

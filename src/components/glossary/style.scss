@@ -1,0 +1,55 @@
+.example {
+  place-self: center;
+}
+
+.container {
+  width: 300px;
+}
+
+.gr-exp {
+  background-color: #f3f3f3;
+  gap: 0;
+  place-self: stretch;
+  place-content: center;
+  grid-template-columns: repeat(3, 100px);
+
+  .item {
+    border: 2px solid black;
+  }
+}
+
+.lines {
+  width: 300px;
+  border-width: 0;
+  grid-gap: 0;
+  background-color: transparent;
+
+  .item {
+    border: 4px solid transparent;
+
+    &:nth-child(3n) {
+      border-left-color: yellow;
+      border-right-color: blue;
+    }
+    &:nth-child(1), &:nth-child(4) {
+      border-left-color: greenyellow;
+      border-right-color: #726783;
+    }
+    &:nth-child(-n+3) {
+      border-top-color: mediumvioletred;
+      border-bottom-color: red;
+    }
+    &:nth-child(n+4) {
+      border-bottom-color: green;
+    }
+  }
+}
+
+.tracks {
+  display: flex;
+  justify-content: center;
+
+  .example:not(:last-child) {
+    margin-right: 30px;
+  }
+}

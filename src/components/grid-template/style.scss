@@ -1,0 +1,25 @@
+.gtr-gtc {
+  display: grid;
+  grid-template: repeat(2, 80px 40px) / 1fr 2fr;
+  grid-gap: 2px;
+}
+
+.with-gta {
+  display: grid;
+  grid-gap: 2px;
+  grid-template:
+          [start-row1] "zone1 zone1 ..... zone2" 50px [row1-end line-with-name]
+          [start-row2] "zone1 zone1 zone3 zone2" 100px / 1fr 2fr 1fr 1fr;
+
+  .zone1 {
+    grid-area: zone1;
+  }
+
+  .zone2 {
+    grid-area: zone2;
+  }
+
+  .zone3 {
+    grid-area: zone3;
+  }
+}

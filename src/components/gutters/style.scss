@@ -1,0 +1,8 @@
+.example {
+  gap: 30px;
+  width: 300px;
+
+  &.second {
+    grid-gap: 20px 40px;
+  }
+}

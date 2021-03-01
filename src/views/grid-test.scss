@@ -1,0 +1,23 @@
+.home {
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+
+  .page {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:1fr;
+    grid-gap: 20px;
+    background-color: #c80000;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+
+    div {
+      background-color: gray;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.named-lines {
+  display: grid;
+  grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end] 1fr [last];
+  grid-template-rows: 100px [middle] 100px;
+  grid-gap: 1px;
+
+  &.repeat {
+    grid-template-columns: repeat(4, [start] 1fr [end]);
+  }
+}

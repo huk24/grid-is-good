@@ -1,0 +1,41 @@
+.auto {
+  display: grid;
+  grid-template: none;
+  grid-auto-rows: 60px 30px 40px;
+  grid-auto-columns: 1fr;
+  grid-gap: 2px;
+
+  .item {
+    padding: 0 10px;
+  }
+
+  &.columns {
+    width: 300px;
+    grid-auto-flow: column;
+  }
+
+  &.with-gta {
+
+
+    grid-template-areas:
+                "zone1 zone1 zone3 zone2"
+                "zone1 zone1 ..... zone2"
+                "..... zone4 zone4 zone4";
+
+    .zone1 {
+      grid-area: zone1;
+    }
+
+    .zone4 {
+      grid-area: zone4;
+    }
+
+    .zone2 {
+      grid-area: zone2;
+    }
+
+    .zone3 {
+      grid-area: zone3;
+    }
+  }
+}

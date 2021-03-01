@@ -1,0 +1,37 @@
+.minmax {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 50px;
+  grid-auto-rows: 50px;
+  grid-gap: 1px;
+  border: 0 dashed black;
+  border-right-width: 2px;
+
+  &.over {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    .item {
+      &:first-child {
+        display: block;
+        vertical-align: middle;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+.repeat-af {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 50px;
+  grid-auto-rows: 50px;
+  grid-gap: 1px;
+  border: 0 dashed black;
+  border-right-width: 2px;
+
+  &.fit {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

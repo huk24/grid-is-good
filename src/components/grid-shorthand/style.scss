@@ -1,0 +1,11 @@
+.grid-rows {
+  display: grid;
+  grid: auto-flow 50px 40px 60px / repeat(3, 1fr);
+  grid-gap: 4px;
+}
+
+.grid-columns {
+  display: grid;
+  grid: repeat(3, 50px) / auto-flow 1fr 2fr;
+  grid-gap: 4px;
+}
